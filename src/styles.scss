@@ -1,1 +1,145 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+
+// H1 Poppins 60 bold #081539
+// H2 Poppins 40 Bold #081539
+// H3 Poppins 30 Bold #000000
+// H4 Poppins 20 Bold #FFFFFF
+// H5 Poppins 16 Bold#000000
+// H6 Poppins 14 regular #000000
+// P Poppins 12 regular #000000
+// A Poppins 12 bold -20AV
+// Button Big Poppins 12 bold -20AV height 37
+// Button small Poppins 12 bold -20AV height 29
+
+h1 {
+    font-size: 30px; 
+    color: #081539;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+h2 {
+    font-size: 40px; 
+    color: #081539;
+    font-weight: bold;
+    margin: 2px;
+}
+
+h3 {
+    font-size: 30px; 
+    color: #000000;
+    font-weight: bold;
+    margin: 2px;
+}
+
+h4 {
+    font-size: 20px; 
+    color: #ffffff;
+    font-weight: bold;
+    margin: 2px;
+}
+
+h5 {
+    font-size: 16px; 
+    color: #000000;
+    font-weight: bold;
+    margin: 2px;
+    
+}
+
+h6 {
+    font-size: 14px; 
+    color: #000000;
+    margin: 2px;
+    font-weight: normal;
+
+}
+
+p {
+    font-size: 14px; 
+    color: #000000;
+    margin: 2px;
+}
+
+a {
+    font-size: 14px; 
+    color: #ffffff;
+    letter-spacing: -0.2px;
+    font-weight: bold;
+    margin: 2px;
+    text-decoration: none;
+    line-height: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn-large {
+    height: 37px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: -0.2px;
+    font-weight: bold;
+    color: #ffffff !important;
+    background-color: #1B2545;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+     -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08); 
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08);
+}
+
+.btn-large-other {
+    height: 37px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: -0.2px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1B2545;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08); 
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08);
+}
+
+.btn-small {
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: -0.2px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1B2545;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08); 
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08);
+}
+
+.btn-large-other:hover {
+    transform: translate3d(0px, -2px, 0px);
+}
+
+@media only screen and (min-width: 1200px) {
+
+h1 {
+    font-size: 60px; 
+}
+
+}
