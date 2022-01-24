@@ -9,17 +9,11 @@ import { HostListener } from '@angular/core'
   styleUrls: ['./header-new-new.component.scss']
 })
 export class HeaderNewNewComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-    
-  }
-
-  header_variable = true
+    header_variable = false
 
   @HostListener("document:scroll")
   scrollFunction() {
+    console.log("scrollFunction")
     if(document.body.scrollTop > 400 || document.documentElement.scrollTop > 400){
       this.header_variable = true;
     }
@@ -27,6 +21,20 @@ export class HeaderNewNewComponent implements OnInit {
       this.header_variable = false;
     }
   }
+
+  scrollToElement($element: any): void {
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+
+  }
+
+
+  constructor() { }
+
+  ngOnInit(): void {
+
+  }
+
+
 
 
 }

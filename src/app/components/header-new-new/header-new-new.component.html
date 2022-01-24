@@ -1,9 +1,9 @@
 <header [class.header_change]="header_variable" >
     <div class="container">
         <input type="checkbox" name="" id="check">
-        
+
         <div class="logo-container">
-            <h2>OSR</h2>
+            <h2 routerLink="/">OSR</h2>
 
         </div>
 
@@ -14,27 +14,28 @@
                         <a href="#">OSR</a>
                     </li>
                     <li class="nav-link" style="--i: .85s">
-                        <a href="#">HOME</a>
+                        <a routerLink="/"  href="#">HOME</a >
                     </li>
                     <li class="nav-link" style="--i: 1.1s">
-                        <a href="#">DIENSTEN<img class="diensten" src="/assets/arrow-btn-small-right.svg" alt=""><i class="fas fa-caret-down"></i></a>
+                        <a >DIENSTEN<img class="diensten" src="/assets/arrow-btn-small-right.svg" alt=""><i class="fas fa-caret-down"></i></a>
                         <div class="dropdown">
                             <ul>
                                 <li class="dropdown-link">
-                                    <a href="#">Renovatie & Transformatie</a>
+                                    <a routerLink="/renovatie" >Renovatie & Transformatie</a>
                                 </li>
                                 <li class="dropdown-link">
-                                    <a href="#">Aan & Verkoop</a>
+                                    <a routerLink="/verkoop" >Aan & Verkoop</a>
                                 </li>
                                 <li class="dropdown-link">
-                                    <a href="#">Advies<i class="fas fa-caret-down"></i></a>
+                                    <a routerLink="/advies" href="#">Advies<i class="fas fa-caret-down"></i></a>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-link" style="--i: 1.35s">
-                        <a href="#">OVER<i class="fas fa-caret-down"></i></a>
+                  <li class="nav-link" style="--i: 1.35s">
+                    <!-- (click)="scrollToElement(target)" -->
+                        <a>OVER<i class="fas fa-caret-down"></i></a>
                     </li>
-                    <li class="nav-link" style="--i: 1.6s"><a href="#" class="btn-large">CONTACT<i class="fas fa-caret-down"></i></a>
+                    <li  class="nav-link" style="--i: 1.6s"><a href="#" class="btn-large">CONTACT<i class="fas fa-caret-down"></i></a>
                     </li>
                 </ul>
             </div>
