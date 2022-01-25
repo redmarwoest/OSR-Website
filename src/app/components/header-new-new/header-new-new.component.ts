@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HostListener } from '@angular/core'
 
+const about: any = document.getElementById("over")
 
 
 @Component({
@@ -10,6 +11,8 @@ import { HostListener } from '@angular/core'
 })
 export class HeaderNewNewComponent implements OnInit {
     header_variable = false
+
+   
 
   @HostListener("document:scroll")
   scrollFunction() {
@@ -35,6 +38,9 @@ export class HeaderNewNewComponent implements OnInit {
   }
 
 
+  toAbout() {
+    about.scrollIntoView();
+  }
 
 
 }

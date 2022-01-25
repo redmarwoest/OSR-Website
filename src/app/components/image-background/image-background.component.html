@@ -1,4 +1,11 @@
-<div>
-<img [ngStyle]="styles" src="assets/Image 4.png" alt="">
-<h1></h1>
-</div>
+<div class="mySlides fade">
+    <div *ngFor="let picture of pictures">
+        <img 
+        [ngStyle]="styles" 
+        src="{{ picture.image }}" alt="">
+        <div [class.background_change]="background_variable" class="shadow">
+            <h1>{{ picture.tekst }}</h1>
+        </div>
+    </div>
+</div>  
+
