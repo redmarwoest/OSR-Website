@@ -17,6 +17,12 @@ import { ImageBackgroundAnimationComponent } from './components/image-background
 import { VideoTekstComponent } from './components/video-tekst/video-tekst.component';
 import { HeaderNewNewComponent } from './components/header-new-new/header-new-new.component'
 import { HomeModule } from './pages/home/home.module';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+export function playerFactory() {
+  return player;
+}
 
 @NgModule({
   declarations: [
@@ -37,7 +43,8 @@ import { HomeModule } from './pages/home/home.module';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    HomeModule 
+    HomeModule,
+    LottieModule.forRoot({ player: playerFactory }),
   ],
   providers: [],
   bootstrap: [AppComponent]

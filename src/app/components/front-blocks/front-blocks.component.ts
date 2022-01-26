@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 
 const blocks = [
-  {title: 'RENOVATIE & TRANSFORMATIE', img: 'assets/renovatie.svg', link: 'renovatie'},
-  {title: 'AAN & VERKOOP', img: 'assets/aan&verkoop.svg', link: 'verkoop'},
-  {title: 'ADVIES', img: 'assets/advies.svg', link: 'advies'}
+  {title: 'RENOVATIE & TRANSFORMATIE', img: 'assets/renovatie.svg', link: 'renovatie', imgGroot: 'assets/renovatie-groot.svg'},
+  {title: 'AAN & VERKOOP', img: 'assets/aan&verkoop.svg', link: 'verkoop', imgGroot: 'assets/aan&verkoop-groot.svg'},
+  {title: 'ADVIES', img: 'assets/advies.svg', link: 'advies', imgGroot: 'assets/advies-groot.svg'}
 ]
 
 

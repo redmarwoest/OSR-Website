@@ -19,7 +19,9 @@
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
     "angular-embed-video": "0.0.4",
+    "lottie-web": "^5.8.1",
     "mat-video": "^2.8.1",
+    "ngx-lottie": "^8.0.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

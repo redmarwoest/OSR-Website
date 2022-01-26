@@ -2,7 +2,8 @@
 <div class="block-container">
 <div class="block-whole" *ngFor="let block of blocks" routerLink="/{{ block.link }}"  >
     <div class="block-whole-first" >
-        <img src="{{ block.img }}" alt="">
+        <img class="image-small"  src="{{ block.img }}" alt="">
+        <img class="image-groot" src="{{ block.imgGroot }}" alt="">
     </div>
     <div class="block-whole-second">
         <h4>{{ block.title }}</h4>
@@ -10,4 +11,5 @@
     </div>
 </div>
 </div>
+
 </div>

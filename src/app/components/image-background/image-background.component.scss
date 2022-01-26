@@ -10,15 +10,15 @@ img {
 }
 
 .shadow {
-width: 100%;
-height: 100vh;
-top: 0px;
-left: 0px;
-position: absolute;
-opacity: 0.2;
-z-index: 0;
-background-color: #000000;
-transition: 0.5s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0.4;
+    z-index: 0;
+    background-color: #000000;
+    transition: 0.5s ease-in-out;
 }
 
 .background_change {
@@ -26,3 +26,20 @@ transition: 0.5s ease-in-out;
     transition: 1s ease-in-out;
     z-index:2;
 }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }

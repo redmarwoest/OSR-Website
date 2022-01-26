@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { AnimationItem } from 'lottie-web';
+import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
   selector: "splash-screen",
@@ -9,6 +11,14 @@ export class SplashScreenComponent implements OnInit {
   windowWidth: any;
   showSplash = true;
 
+  options: AnimationOptions = {
+    path: 'assets/data.json',
+  };
+
+  animationCreated(animationItem: AnimationItem): void {
+    console.log(animationItem);
+  }
+
   ngOnInit(): void {
     setTimeout(() => {
       this.windowWidth = "-" + window.innerWidth + "px";
@@ -16,6 +26,6 @@ export class SplashScreenComponent implements OnInit {
       setTimeout(() => {
         this.showSplash = !this.showSplash;
       }, 500);
-    }, 2600);
+    }, 4200);
   }
 }

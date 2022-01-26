@@ -1,10 +1,9 @@
 <div class="mySlides fade">
-    <div *ngFor="let picture of pictures">
+    <div>
         <img 
         [ngStyle]="styles" 
-        src="{{ picture.image }}" alt="">
+        src="assets/chandeleer.png" alt="">
         <div [class.background_change]="background_variable" class="shadow">
-            <h1>{{ picture.tekst }}</h1>
         </div>
     </div>
 </div>  
