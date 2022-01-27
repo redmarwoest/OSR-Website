@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video-tekst.component.scss']
 })
 export class VideoTekstComponent implements OnInit {
+  @Input() video: any;
+  @Input() title: any;
+  @Input() secondTitle: any;
+  @Input() paragraph: any
+
 
   constructor() { }
 

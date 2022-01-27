@@ -29,8 +29,20 @@ img {
 .image-background h1 {
   position: absolute;
   bottom: 30px;
-  left: 100px;
-  width: 400px;
-  line-height: 50px;
+  left: 40px;
+  line-height: 30px;
+  
 
+}
+
+@media only screen and (min-width: 800px) {
+
+  .image-background h1 {
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+    width: 400px;
+    line-height: 50px;
+  
+  }
 }
