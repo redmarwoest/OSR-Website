@@ -10,7 +10,7 @@
     justify-content: center;
     margin: auto;
     position: absolute;
-    top: 50%; left: 50%;
+    top: 45%; left: 50%;
     transform: translate(-50%,-50%);
 }
 
@@ -31,7 +31,7 @@
 
 
 .block-whole:hover {
-    transform: translate3d(0px, -5px, 0px);
+    transform: translate3d(0px, -2px, 0px);
 }
 
 
@@ -51,12 +51,11 @@
 
 
 .block-whole-second {
-    width: 80%;
     display: flex;
     margin: auto;
     padding-right:20px;
     align-items: center;
-
+    width: 210px;
     justify-content: space-between;
 }
 
@@ -72,61 +71,64 @@
 
     .block-whole {
         flex-direction: column;
-        cursor: pointer;
-        width: 210px;
-        height: 210px;
+        width: 230px;
+        height: 240px;
         background-color: transparent; 
-        margin-bottom: 10px;
         opacity: 0.8;
         -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.0); 
         box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.0);
+        
     }
 
     .block-whole-first {
-        border-radius: 5px;
+        border-radius: 1000px;
         width: 190px;
         height: 190px;
+        margin: auto;
+        background-color:rgba(26, 26, 26, 0.0);  
+        margin-bottom: 10px;
+        -webkit-transition: background-color 400ms linear;
+        -ms-transition: background-color 400ms linear;
+        transition: background-color 400ms linear;
+
     }
 
     .block-whole-first:hover {
-        border-radius: 5px;
-        width: 290px;
-    }
-    
-    .block-whole-first img {
-        margin: auto;
-        align-items: center;
-        text-align: center;
-        display: block;
-        width: 40%;
-        padding-top:50px;
+        -webkit-transition: background-color 400ms linear;
+        -ms-transition: background-color 400ms linear;
+        transition: background-color 400ms linear;
+        background-color:rgba(26, 26, 26, 0.9);  
     }
 
+
     .block-whole-second {
-        width: 90%;
         display: flex;
         margin: auto;
         height: 54px;
-        padding-right:20px;
+        width: 190px;
+        padding-left: 8px;
+        padding-right: 8px;
         align-items: center;
         justify-content: space-between;
-        -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16); 
-        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
         border-radius: 5px;
         background-color: rgba(26, 26, 26, 0.9); 
-
     }
     
     .block-whole-second h4 {
-        line-height: 24px;
+        line-height: 20px;
     }
 
     .image-small {
-        display: none;
+        display: none !important;
     }
 
     .image-groot {
         display: block;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        display: block;
+        margin-top: 50px;
     }
     
     

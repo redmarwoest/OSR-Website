@@ -2,7 +2,7 @@
 <div class="block-container">
 <div class="block-whole" *ngFor="let block of blocks" routerLink="/{{ block.link }}"  >
     <div class="block-whole-first" >
-        <img class="image-small"  src="{{ block.img }}" alt="">
+        <img class="image-small" src="{{ block.img }}" alt="">
         <img class="image-groot" src="{{ block.imgGroot }}" alt="">
     </div>
     <div class="block-whole-second">
@@ -10,6 +10,6 @@
         <img src="assets/arrow-btn-large-right.svg" alt="">
     </div>
 </div>
+<!-- <ng-lottie [options]="options" (animationCreated)="animationCreated($event)"></ng-lottie> -->
 </div>
-
 </div>

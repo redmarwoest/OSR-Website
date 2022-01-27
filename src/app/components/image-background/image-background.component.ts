@@ -2,8 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { HostListener } from '@angular/core'
 
 const pictures = [
-  {image: "assets/Image 4.png"},
-  {image: "assets/Image 4.png"},
+  {image: "assets/Image 4.png", tekst: "hi"},
+  {image: "assets/Image 4.png", tekst: "hi"},
 ]
 
 @Component({

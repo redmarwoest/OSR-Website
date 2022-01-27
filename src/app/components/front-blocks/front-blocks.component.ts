@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AnimationItem } from 'lottie-web';
+import { AnimationOptions } from 'ngx-lottie';
 
 
 const blocks = [
@@ -16,7 +18,16 @@ const blocks = [
 export class FrontBlocksComponent implements OnInit {
 blocks = blocks
 
+options: AnimationOptions = {
+  path: 'assets/data_load.json',
+};
+
+animationCreated(animationItem: AnimationItem): void {
+  console.log(animationItem);
+}
+
   constructor() { }
+
 
   ngOnInit(): void {
   }
