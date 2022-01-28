@@ -1,0 +1,18 @@
+<!-- Need to turn around with flexbox -->
+<div class="house-detail-container" *ngFor="let house of houses">
+    <div class="house-detail-first">
+        <img src="{{ house.img }}" alt="">
+    </div>
+    <div class="house-detail-second">
+        <p> {{ house.type }} | <span>{{ house.m2 }}</span></p>
+        <h5>{{ house.street}} | <span> {{ house.city }}</span></h5>
+        <p> {{ house.information }}</p>
+        <div class="house-detail-buttons">
+            <button class="btn-small">{{ house.status }}</button>
+            <div class="house-detail-more">
+                <p>more</p>
+                <img src="assets/arrow-btn-large-right.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>

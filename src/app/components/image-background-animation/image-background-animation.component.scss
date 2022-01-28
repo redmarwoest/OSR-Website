@@ -1,5 +1,6 @@
 .image-background {
   position: relative;
+  margin-bottom: 60px;
 }
 
 img {
@@ -40,9 +41,14 @@ img {
   .image-background h1 {
     position: absolute;
     bottom: 30px;
-    left: 100px;
+    left: 18%;
     width: 400px;
     line-height: 50px;
-  
   }
+  
+  .image-background {
+    margin-bottom: 150px;
+  }
+
+
 }

@@ -19,6 +19,7 @@ import { HeaderNewNewComponent } from './components/header-new-new/header-new-ne
 import { HomeModule } from './pages/home/home.module';
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
+import { HouseDetailNewComponent } from './components/house-detail-new/house-detail-new.component';
 
 export function playerFactory() {
   return player;
@@ -37,6 +38,7 @@ export function playerFactory() {
     ImageBackgroundAnimationComponent,
     VideoTekstComponent,
     HeaderNewNewComponent,
+    HouseDetailNewComponent,
   ],
   imports: [
     BrowserModule,
