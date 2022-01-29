@@ -265,6 +265,17 @@ section{
     margin-right: -10px;
   }
 
+  .tekst-logo {
+    color: white;
+    margin-top: -10px;
+    transition: animation .5s;
+  }
+
+  .tekst_change {
+      display: none;
+      transition: animation .5s;
+  }
+
 .nav-active {
     visibility: hidden;
 }
@@ -432,6 +443,10 @@ section{
         font-weight: bold;
     }
  
+    .tekst-logo {
+        display: none;
+    }
+  
 
 
 }

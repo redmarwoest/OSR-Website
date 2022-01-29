@@ -93,11 +93,12 @@
 
     }
 
-    .block-whole-first:hover {
+
+    .block-whole:hover .block-whole-first {
         -webkit-transition: background-color 400ms linear;
         -ms-transition: background-color 400ms linear;
         transition: background-color 400ms linear;
-        background-color:rgba(26, 26, 26, 0.9);  
+        background-color:rgba(26, 26, 26, 1.0);  
     }
 
 

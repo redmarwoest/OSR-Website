@@ -18,6 +18,20 @@
     padding: 20px;
     border-radius: 00px 0px 10px 10px;
     margin-top: -10px;
+    cursor: pointer;
+}
+
+.house-detail-second:hover img {
+    transform: translate3d(2px, 0px, 0px);
+    transition: transform .2s ease-in-out;
+}
+
+.house-detail-second p span {
+    font-style: italic;
+}
+
+.house-detail-second h5 span {
+    font-weight:400;
 }
 
 .house-detail-buttons {
@@ -33,6 +47,16 @@
     align-content: center;
     align-items: center;
 }
+
+.house-detail-more img { 
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+}
+
+.counter-block-third img:hover { 
+    transform: translate3d(2px, 0px, 0px);
+}
+
 
 
 @media only screen and (min-width: 900px) {

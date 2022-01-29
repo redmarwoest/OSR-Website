@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 const houses = [
   {
-    img: "assets/chandeleer.png", 
+    id: 1,
+    imgPlaceholder: "assets/chandeleer.png", 
     type: "House",
     m2: "120",
     street: "Van Ostadestraat 46",
@@ -12,7 +14,8 @@ const houses = [
     information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
   },
   {
-    img: "assets/chandeleer.png", 
+    id: 2,
+    imgPlaceholder: "assets/chandeleer.png", 
     type: "House",
     m2: "120",
     street: "Van Ostadestraat 46",
@@ -21,7 +24,8 @@ const houses = [
     information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
   },
   {
-    img: "assets/chandeleer.png", 
+    id: 3,
+    imgPlaceholder: "assets/chandeleer.png", 
     type: "House",
     m2: "120",
     street: "Van Ostadestraat 46",
@@ -30,7 +34,8 @@ const houses = [
     information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
   },
   {
-    img: "assets/chandeleer.png", 
+    id: 4,
+    imgPlaceholder: "assets/chandeleer.png", 
     type: "House",
     m2: "120",
     street: "Van Ostadestraat 46",
@@ -39,7 +44,8 @@ const houses = [
     information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
   },
   {
-    img: "assets/chandeleer.png", 
+    id: 5,
+    imgPlaceholder: "assets/chandeleer.png", 
     type: "House",
     m2: "120",
     street: "Van Ostadestraat 46",
@@ -48,7 +54,8 @@ const houses = [
     information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
   },
   {
-    img: "assets/chandeleer.png", 
+    id: 6,
+    imgPlaceholder: "assets/chandeleer.png", 
     type: "House",
     m2: "120",
     street: "Van Ostadestraat 46",

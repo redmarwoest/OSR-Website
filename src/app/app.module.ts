@@ -20,6 +20,7 @@ import { HomeModule } from './pages/home/home.module';
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { HouseDetailNewComponent } from './components/house-detail-new/house-detail-new.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
 
 export function playerFactory() {
   return player;
@@ -39,6 +40,7 @@ export function playerFactory() {
     VideoTekstComponent,
     HeaderNewNewComponent,
     HouseDetailNewComponent,
+    ReviewsComponent,
   ],
   imports: [
     BrowserModule,

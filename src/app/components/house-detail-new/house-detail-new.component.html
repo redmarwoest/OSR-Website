@@ -1,11 +1,11 @@
 <!-- Need to turn around with flexbox -->
 <div class="house-detail-container" *ngFor="let house of houses">
     <div class="house-detail-first">
-        <img src="{{ house.img }}" alt="">
+        <img src="{{ house.imgPlaceholder }}" alt="">
     </div>
-    <div class="house-detail-second">
-        <p> {{ house.type }} | <span>{{ house.m2 }}</span></p>
-        <h5>{{ house.street}} | <span> {{ house.city }}</span></h5>
+    <div [routerLink]="['/', house.id]"  class="house-detail-second">
+        <p> {{ house.type }} | <span>{{ house.m2 }}㎡ </span></p>
+        <h5>{{ house.street}}  <span> | {{ house.city }}</span></h5>
         <p> {{ house.information }}</p>
         <div class="house-detail-buttons">
             <button class="btn-small">{{ house.status }}</button>
