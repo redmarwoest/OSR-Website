@@ -27,28 +27,49 @@ img {
   transition: 0.6s ease-in-out;
 }
 
-.image-background h1 {
+.image-title {
+  position: absolute;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 12vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 1200px;
+}
+
+.image-title h1 {
+  line-height: 30px;
   position: absolute;
   bottom: 30px;
-  left: 40px;
-  line-height: 30px;
-  
-
 }
 
 @media only screen and (min-width: 800px) {
 
-  .image-background h1 {
-    position: absolute;
-    bottom: 30px;
-    left: 18%;
-    width: 400px;
-    line-height: 50px;
-  }
-  
   .image-background {
     margin-bottom: 150px;
   }
 
+  .image-title h1 {
+    width: 600px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 30px;
+  }
 
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .image-title {
+    position: absolute;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 12vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }

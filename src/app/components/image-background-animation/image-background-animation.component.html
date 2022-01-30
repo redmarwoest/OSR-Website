@@ -1,5 +1,7 @@
 <div class="image-background">
-    <img [ngStyle]="styles" src="assets/chandeleer.png" alt="">
-    <div class="shadow"></div>
-    <h1> {{ title }}</h1>
+        <img [ngStyle]="styles" src="assets/chandeleer.png" alt="">
+    <div [ngStyle]="shadowStyle" class="shadow"></div>
+    <div class="image-title">
+        <h1> {{ title }}</h1>
+    </div>
 </div>

@@ -1,31 +1,54 @@
 import {
-    trigger,
-    animate,
-    transition,
-    style,
-    query,
-  } from '@angular/animations';
-  
-  export const fadeAnimation = trigger('fadeAnimation', [
-    transition('* <=> *', [
-      query(':enter', [style({ opacity: 0, position: 'absolute' })], {
-        optional: true,
+  sequence,
+  trigger,
+  stagger,
+  animate,
+  style,
+  group,
+  query as q,
+  transition,
+  keyframes,
+  animateChild,
+} from '@angular/animations'
+
+const query = (style: any, animate:any, optional = { optional: true }) =>
+  q(style, animate, optional)
+
+const fade = [
+  query(':enter, :leave', style({ position: 'fixed', width: '100%' })),
+  query(':enter', [style({ opacity: 0 })]),
+  group([
+    query(':leave', [animate('0.3s ease-out', style({ opacity: 0 }))]),
+    query(':enter', [
+      style({ opacity: 0 }),
+      animate('0.3s ease-out', style({ opacity: 1 })),
+    ]),
+  ]),
+]
+
+const fadeInFromDirection = (direction: string) => [
+  query(':enter, :leave', style({ position: 'fixed', width: '100%' })),
+  group([
+    query(':enter', [
+      style({
+        transform: `translateX(${direction === 'backward' ? '-' : ''}15%)`,
+        opacity: 0,
       }),
-      query(
-        ':leave',
-        [
-          style({ opacity: 1 }),
-          animate('0.3s', style({ opacity: 0, position: 'absolute' })),
-        ],
-        { optional: true }
-      ),
-      query(
-        ':enter',
-        [
-          style({ opacity: 0 }),
-          animate('0.3s', style({ opacity: 1, position: 'relative' })),
-        ],
-        { optional: true }
+      animate(
+        '0.3s ease-out',
+        style({ transform: 'translateX(0%)', opacity: 1 }),
       ),
     ]),
-  ]);
+    query(':leave', [
+      style({ transform: 'translateX(0%)' }),
+      animate('0.3s ease-out', style({ opacity: 0 })),
+    ]),
+  ]),
+]
+
+export const routerTransition = trigger('routerTransition', [
+  transition('* => inital', fade),
+  transition('* => section', fade),
+  transition('* => forward', fadeInFromDirection('forward')),
+  transition('* => backward', fadeInFromDirection('backward')),
+])

@@ -1,1 +1,17 @@
-<p>reviews works!</p>
+<div class="review-container">
+    <div class="review-whole-total" >
+    <div class="review-whole" *ngFor="let review of reviews">
+        <div class="review-whole-first" >
+        <img src=" {{ review.image }}" alt="">
+            <h4>{{ review.name }}</h4>
+        </div>
+        <div div class="review-whole-second" >
+            <p>{{ review.paragraph }}</p>
+        </div>
+    </div>
+    </div>
+    <div routerLink="/verkoop" class="review-whole-third">
+        <h6>Meer reviews</h6>
+        <img src="assets/arrow-btn-large-right.svg" alt="">
+    </div>
+</div>

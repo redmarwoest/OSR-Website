@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ImageBackgroundAnimationComponent implements OnInit {
   @Input('title') title: any;
   @Input() styles: any = {};
+  @Input() shadowStyle: any = {};
 
 
   constructor() { }

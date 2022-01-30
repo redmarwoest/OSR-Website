@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 
@@ -11,7 +11,9 @@ const houses = [
     street: "Van Ostadestraat 46",
     city: "Amsterdam",
     status: "sold",
-    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
+    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+    bedBad: "3/2",
+    etage: "2/3"
   },
   {
     id: 2,
@@ -21,7 +23,9 @@ const houses = [
     street: "Van Ostadestraat 46",
     city: "Amsterdam",
     status: "sold",
-    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
+    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+    bedBad: "3/2",
+    etage: "2/3"
   },
   {
     id: 3,
@@ -31,7 +35,9 @@ const houses = [
     street: "Van Ostadestraat 46",
     city: "Amsterdam",
     status: "sold",
-    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
+    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+    bedBad: "3/2",
+    etage: "2/3"
   },
   {
     id: 4,
@@ -41,7 +47,9 @@ const houses = [
     street: "Van Ostadestraat 46",
     city: "Amsterdam",
     status: "sold",
-    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
+    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+    bedBad: "3/2",
+    etage: "2/3"
   },
   {
     id: 5,
@@ -51,7 +59,9 @@ const houses = [
     street: "Van Ostadestraat 46",
     city: "Amsterdam",
     status: "sold",
-    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
+    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+    bedBad: "3/2",
+    etage: "2/3"
   },
   {
     id: 6,
@@ -61,7 +71,9 @@ const houses = [
     street: "Van Ostadestraat 46",
     city: "Amsterdam",
     status: "sold",
-    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
+    information: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+    bedBad: "3/2",
+    etage: "2/3"
   }
 ]
 
@@ -71,7 +83,8 @@ const houses = [
   styleUrls: ['./house-detail-new.component.scss']
 })
 export class HouseDetailNewComponent implements OnInit {
-  houses = houses
+  @Input() houses = houses
+
 
   constructor() { }
 

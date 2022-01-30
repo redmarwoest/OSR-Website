@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { fadeAnimation } from './transition-animation';
+import { routerTransition } from './transition-animation'
+import { RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [fadeAnimation],
+  animations: [routerTransition],
 })
 export class AppComponent {
   title = 'osr-website';
+
+
 }

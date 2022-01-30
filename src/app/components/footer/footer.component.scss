@@ -17,7 +17,6 @@ a {
 
 footer {
     background-color:#313131;
-
     right: 0;
     bottom: 0;
     left: 0;
@@ -25,6 +24,7 @@ footer {
     text-align: center;
     clear: both;
     position: relative;
+    margin-top: 100px;
 }
 
 .footer-total {
@@ -109,6 +109,9 @@ div {
         margin-right: 0px;
         margin-left: 40px;
 
+    }
+    footer {
+        margin-top: 150px;
     }
 
 }

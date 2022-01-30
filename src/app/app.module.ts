@@ -21,6 +21,10 @@ import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { HouseDetailNewComponent } from './components/house-detail-new/house-detail-new.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
+import { DescriptionBlocksComponent } from './components/description-blocks/description-blocks.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 export function playerFactory() {
   return player;
@@ -41,6 +45,8 @@ export function playerFactory() {
     HeaderNewNewComponent,
     HouseDetailNewComponent,
     ReviewsComponent,
+    DescriptionBlocksComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +55,8 @@ export function playerFactory() {
     FormsModule,
     HomeModule,
     LottieModule.forRoot({ player: playerFactory }),
+    IvyCarouselModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

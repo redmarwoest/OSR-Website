@@ -1,4 +1,16 @@
 <app-image-background-animation 
-    [title]="" 
-    [styles]="{height:'40vh'}"
+    [title]="'Van Ostadestraat 46'" 
+    [styles]="{height:'35vh'}"
+    [shadowStyle]="{height:'35vh'}"
     ></app-image-background-animation> 
+    <div (click)="backClicked()" class="back-button">
+        <img class="back" src="assets/arrow-btn-large-left.svg" alt="">
+        <h6>Terug naar woningen</h6>
+    </div>
+    <app-description-blocks></app-description-blocks>
+    <div class="pictures-total">
+        <h6>pictures</h6>
+        <img  class="pictures" src="assets/arrow-btn-large-down.svg" alt="">
+    </div>
+    <app-carousel
+    ></app-carousel>
