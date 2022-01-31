@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 
 @Component({
@@ -20,6 +20,9 @@ export class CounterBlocksComponent implements OnInit {
   
     //we have created setinterval function with arrow function and
     //and set them in a variable that is projectcountstop.
+
+  @HostListener('window:scroll', ['$event'])
+
     projectcountstop:any = setInterval(()=>{
       this.projectcount++;
       //we need to stop this at  particular point; will use if condition

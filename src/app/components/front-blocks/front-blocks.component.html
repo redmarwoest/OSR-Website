@@ -1,5 +1,5 @@
 <div class="block">
-<div class="block-container">
+<div class="block-container" [@cardAnimation]="blocks.length">
 <div id="block-whole" class="block-whole" *ngFor="let block of blocks" routerLink="/{{ block.link }}"  >
     <div id="block-whole-first" class="block-whole-first" >
         <img class="image-small" src="{{ block.img }}" alt="">
@@ -10,6 +10,6 @@
         <img src="assets/arrow-btn-large-right.svg" alt="">
     </div>
 </div>
-<!-- <ng-lottie [options]="options" (animationCreated)="animationCreated($event)"></ng-lottie> -->
 </div>
+<!-- <ng-lottie class="lottie" [options]="options" (animationCreated)="animationCreated($event)"></ng-lottie> -->
 </div>

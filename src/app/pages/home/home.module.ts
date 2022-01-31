@@ -7,6 +7,12 @@ import { CounterBlocksComponent } from '../../components/counter-blocks/counter-
 import { ImageBackgroundComponent } from '../../components/image-background/image-background.component';
 import { ImageTekstComponent } from '../../components/image-tekst/image-tekst.component';
 import { HomeRoutingModule } from "./home-routing.module";
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+export function playerFactory() {
+    return player;
+  }
 
 @NgModule({
     declarations: [
@@ -17,7 +23,13 @@ import { HomeRoutingModule } from "./home-routing.module";
     ],
 
     imports: [
-        [RouterModule, CommonModule, HomeRoutingModule]
+        [
+        RouterModule, 
+        CommonModule, 
+        HomeRoutingModule,
+        LottieModule.forRoot({ player: playerFactory }),
+    ]
+
     ],
 
     exports: [

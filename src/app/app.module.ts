@@ -24,7 +24,8 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
 import { DescriptionBlocksComponent } from './components/description-blocks/description-blocks.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PopUpComponent } from './components/pop-up/pop-up.component'
 
 export function playerFactory() {
   return player;
@@ -47,6 +48,7 @@ export function playerFactory() {
     ReviewsComponent,
     DescriptionBlocksComponent,
     CarouselComponent,
+    PopUpComponent,
   ],
   imports: [
     BrowserModule,

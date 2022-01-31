@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
+import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
 
 
 const blocks = [
@@ -13,7 +14,27 @@ const blocks = [
 @Component({
   selector: 'app-front-blocks',
   templateUrl: './front-blocks.component.html',
-  styleUrls: ['./front-blocks.component.scss']
+  styleUrls: ['./front-blocks.component.scss'],
+  animations: [
+
+    // Trigger animation cards array
+    trigger('cardAnimation', [
+      // Transition from any state to any state
+      transition('* => *', [
+        // Initially the all cards are not visible
+        query(':enter', style({ opacity: 0 }), { optional: true }),
+
+        // Each card will appear sequentially with the delay of 300ms
+        query(':enter', stagger('400ms', [
+          animate('0.8s 4.6s ease', keyframes([
+            style({ opacity: 0, transform: 'translateY(40px)', offset: 0 }),
+            style({ opacity: .5, transform: 'translateY(20px) scale(1)', offset: 0.3 }),
+            style({ opacity: 1, transform: 'translateY(0)', offset: 1 }),
+          ]))]), { optional: true }),
+
+      ]),
+    ]),
+  ]
 })
 export class FrontBlocksComponent implements OnInit {
 blocks = blocks
@@ -21,6 +42,7 @@ blocks = blocks
 options: AnimationOptions = {
   path: 'assets/data_load.json',
 };
+
 
 animationCreated(animationItem: AnimationItem): void {
   console.log(animationItem);
