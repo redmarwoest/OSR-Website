@@ -25,7 +25,13 @@ import { DescriptionBlocksComponent } from './components/description-blocks/desc
 import { CarouselComponent } from './components/carousel/carousel.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PopUpComponent } from './components/pop-up/pop-up.component'
+import { PopUpComponent } from './components/header-new-new/pop-up/pop-up.component'
+import { HouseService } from './app.service';
+import { ReactiveFormsModule } from '@angular/forms';  
+import { ContactService } from './contact.service';
+import { TeamComponent } from './pages/team/team.component';
+import { TeamMemberComponent } from './components/team-member/team-member.component';
+
 
 export function playerFactory() {
   return player;
@@ -49,6 +55,8 @@ export function playerFactory() {
     DescriptionBlocksComponent,
     CarouselComponent,
     PopUpComponent,
+    TeamComponent,
+    TeamMemberComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,8 +67,10 @@ export function playerFactory() {
     LottieModule.forRoot({ player: playerFactory }),
     IvyCarouselModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule
+
   ],
-  providers: [],
+  providers: [HouseService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

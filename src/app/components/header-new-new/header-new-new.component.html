@@ -4,39 +4,39 @@
 
         <div class="logo-container">
             <h2 routerLink="/">OSR</h2>
-            <!-- <p class="tekst-logo" [class.tekst_change]="header_variable">Real Estate | Advisory | Investments</p> -->
-
         </div>
 
-        <div class="nav-btn">
+        <div class="nav-btn" >
             <div class="nav-links">
                 <ul>
-                    <li class="nav-link nav-active" style="--i: ">
-                        <a href="#">OSR</a>
+                    <li class="nav-link nav-active" style="--i:  ">
+                        <a routerLink="/" >OSR</a>
                     </li>
-                    <li class="nav-link" style="--i: .85s">
-                        <a routerLink="/"  href="#">HOME</a >
+                    <li (click)="closeNav()" class="nav-link" style="--i: .85s">
+                        <a routerLink="/" >HOME</a >
                     </li>
-                    <li class="nav-link" style="--i: 1.1s">
+                    <li (click)="closeNav()" class="nav-link" style="--i: 1.1s">
+                        <a routerLink="/team"  href="#">TEAM</a >
+                    </li>
+                    <li class="nav-link" style="--i: 1.35s">
                         <a >DIENSTEN<img class="diensten" src="assets/arrow-btn-small-right.svg" alt=""><i class="fas fa-caret-down"></i></a>
                         <div class="dropdown">
                             <ul>
-                                <li class="dropdown-link">
+                                <li (click)="closeNav()" class="dropdown-link">
                                     <a routerLink="/renovatie" >Renovatie & Transformatie</a>
                                 </li>
-                                <li class="dropdown-link">
+                                <li (click)="closeNav()" class="dropdown-link">
                                     <a routerLink="/verkoop" >Aan & Verkoop</a>
                                 </li>
-                                <li class="dropdown-link">
+                                <li (click)="closeNav()" class="dropdown-link">
                                     <a routerLink="/advies" href="#">Advies<i class="fas fa-caret-down"></i></a>
                             </ul>
                         </div>
                     </li>
-                  <li (click)="toAbout()" class="nav-link" style="--i: 1.35s">
-                    <!-- (click)="scrollToElement(target)" -->
-                        <a>OVER<i class="fas fa-caret-down"></i></a>
+                  <li (click)="toAbout()" (click)="closeNav()" class="nav-link" style="--i: 1.6s">
+                        <a routerLink="/" >OVER<i class="fas fa-caret-down"></i></a>
                     </li>
-                    <li  class="nav-link" style="--i: 1.6s"><a href="#" class="btn-large">UW VASTGOED VERKOPEN?<i class="fas fa-caret-down"></i></a>
+                    <li (click)="closeNav()"  class="nav-link" style="--i: 1.85s"><a (click)="popUpClick()" class="btn-large">UW VASTGOED VERKOPEN?<i class="fas fa-caret-down"></i></a>
                     </li>
                 </ul>
             </div>
@@ -50,3 +50,4 @@
     </div>
     <app-pop-up></app-pop-up>
 </header>
+

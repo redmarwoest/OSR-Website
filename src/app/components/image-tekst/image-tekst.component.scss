@@ -4,6 +4,7 @@
     margin:auto;
     width: 90%;
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 .oscar-foto{
     width: 300px;
@@ -40,7 +41,7 @@
 .image-tekst-second {
     text-align:initial;
     margin-top: 40px;
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
     
 }
@@ -100,7 +101,19 @@
     .image-tekst-container {
         margin-bottom: 140px;
         max-width: 1100px;
+        align-items: center;
+        align-content: center;
     }
+
+    .image-tekst-first {
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    
+    }
+
+
 
     .oscar-foto{
         width: 375px;

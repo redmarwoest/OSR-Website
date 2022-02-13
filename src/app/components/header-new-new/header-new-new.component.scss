@@ -13,6 +13,10 @@ ul{
     list-style: none;
 }
 
+h2 {
+    cursor: pointer;
+}
+
 
 header{
     position: sticky;
@@ -208,7 +212,7 @@ section{
     border-radius: 3px;
     background-color:#ffffff ;
     position: relative;
-    z-index: 1001;
+    z-index: 20;
     transition: .5s;
 }
 
@@ -316,6 +320,7 @@ section{
         transition: .65s;
     }
 
+
     #check:checked ~ .nav-btn{
         transform: translateX(0);
     }
@@ -393,14 +398,6 @@ section{
         border-bottom: none;
     }
 
-    .arrow{
-        z-index: 1;
-        background-color: #3a3a3a;
-        left: 10%;
-        transform: scale(1.1) rotate(45deg);
-        transition: .5s;
-    }
-
     .nav-link:hover .arrow{
         background-color: #3a3a3a;
     }
@@ -445,6 +442,15 @@ section{
  
     .tekst-logo {
         display: none;
+    }
+
+    .diensten {
+        display: none;
+    }
+
+    .btn-large {
+        border-radius: 0px!important;
+
     }
   
 

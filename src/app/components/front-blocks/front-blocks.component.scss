@@ -68,10 +68,14 @@
 }
 
 .lottie {
-    position:absolute;
+
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
+    
+    .block-container {
+        flex-direction: row;
+    }     
 
     .block-whole {
         flex-direction: column;
@@ -141,9 +145,7 @@
 
 
 @media only screen and (min-width: 1000px) {
-    .block-container {
-        flex-direction: row;
-    }     
+
 
 
     

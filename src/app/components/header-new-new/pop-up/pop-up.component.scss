@@ -1,0 +1,184 @@
+.pop-up-background {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    display: none;
+    position: fixed;
+}
+
+.popup_change {
+    display: block;
+}
+
+.pop-up {
+    width: 90%;
+    margin: auto;
+    height: 90vh;
+    margin-top: 30px;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 1000;
+
+}
+
+.pop-up-header{
+    background-color: #393939;
+    text-align: center;
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    position: sticky;
+}
+
+.pop-up-header h3 {
+    color: #ffffff;
+    line-height: 30px;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+.pop-up-header img {
+position: absolute;
+left: 10px;
+top: 25px;
+cursor: pointer;
+
+}
+
+.pop-up-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y:auto;
+    height:80vh;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.pop-up-container-first {
+    background-color: #ffffff;
+    padding:20px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.pop-up-container-first div {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+.pop-up-container-first div img {
+    margin-right:20px;
+}
+
+.pop-up-container-second{
+    background-color: #F1F2F4;
+    padding:20px;
+}
+
+.pop-up-container-second h5{
+margin-bottom: 20px;
+}
+
+.pop-up-container-second div { 
+    display: flex;
+    flex-direction: column;
+}
+
+.pop-up-container-second div input {
+    margin-bottom: 8px;
+    height: 32px;
+    border: 0px;
+    border-radius: 6px;
+    padding-left:10px
+}
+
+h3 {
+    letter-spacing: -0.5px;
+}
+
+h5 {
+    line-height: 25px;
+}
+
+h6 {
+    letter-spacing: -0.5px;
+}
+
+p {
+    letter-spacing: -0.5px;
+}
+
+.sentencetwo {
+    font-weight: 300;
+    font-style:italic
+}
+
+button {
+    margin-top: 20px;
+}
+
+
+
+
+@media only screen and (min-width: 1000px) { 
+
+    .pop-up{
+        position: absolute;
+        top: 52%; left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 1050px;
+        max-height: 800px;
+    }
+
+    .pop-up-container {
+        display: flex;
+        flex-direction: row;
+        height: 550px;
+    }
+
+    .pop-up-container-first {
+        padding:40px;
+        width:50%;
+
+    }
+
+    .pop-up-header h3 {
+        width: 500px;
+        padding: 20px;
+    }
+
+    .pop-up-header img {
+        top:20px;
+        left: 20px;
+    }
+    
+    
+    .pop-up-container-first div img {
+        margin-right:20px;
+
+    }
+    
+    .pop-up-container-second{
+        padding:40px;
+        width:50%;
+
+    }
+
+    .name-phone{
+        display:flex;
+        flex-direction: row !important;
+        justify-content:space-between
+    }
+    .name-phone input{
+        width: 46%;
+    }
+
+
+
+
+}

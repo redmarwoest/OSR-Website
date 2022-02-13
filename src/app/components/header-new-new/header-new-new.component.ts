@@ -3,7 +3,6 @@ import { HostListener } from '@angular/core'
 
 const about: any = document.getElementById("over")
 
-
 @Component({
   selector: 'app-header-new-new',
   templateUrl: './header-new-new.component.html',
@@ -11,12 +10,11 @@ const about: any = document.getElementById("over")
 })
 export class HeaderNewNewComponent implements OnInit {
     header_variable = false
-
-   
-
+    popup_variable: any 
+    closed_variable:boolean = false 
+    
   @HostListener("document:scroll")
   scrollFunction() {
-    console.log("scrollFunction")
     if(document.body.scrollTop > 270 || document.documentElement.scrollTop > 270){
       this.header_variable = true;
     }
@@ -25,9 +23,13 @@ export class HeaderNewNewComponent implements OnInit {
     }
   }
 
+  closeNav() {
+    const ele = document.getElementById("check") as HTMLInputElement;
+    ele.checked = false;
+  }
+
   scrollToElement($element: any): void {
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-
   }
 
 
@@ -39,8 +41,15 @@ export class HeaderNewNewComponent implements OnInit {
 
 
   toAbout() {
-    about.scrollIntoView();
+    document.getElementById("over")?.scrollIntoView({behavior:"smooth"})
   }
+  
+  popUpClick() {
+    this.popup_variable = true
+
+  }
+
+
 
 
 }

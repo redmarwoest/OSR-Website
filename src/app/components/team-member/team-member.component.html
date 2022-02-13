@@ -1,0 +1,13 @@
+<div class="team-container">
+<div class="team-container-element" *ngFor="let team of teams">
+    <div class="team-image">
+        <img src="{{ team.image }}" alt="">
+    </div>
+    <div class="team-tekst">
+        <h4> {{ team.name}} </h4>
+        <h6> {{ team.functie }} </h6>
+        <p> {{ team.paragraph }} </p>
+    </div>
+
+</div>
+</div>

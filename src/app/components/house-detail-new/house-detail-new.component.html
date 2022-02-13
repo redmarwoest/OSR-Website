@@ -1,4 +1,5 @@
 <!-- Need to turn around with flexbox -->
+<div [@cardAnimation]="houses.length">
 <div class="house-detail-container" *ngFor="let house of houses">
     <div class="house-detail-first">
         <img src="{{ house.imgPlaceholder }}" alt="">
@@ -15,4 +16,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>

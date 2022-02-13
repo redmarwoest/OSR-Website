@@ -1,0 +1,47 @@
+<div (click)="popUpRemove()" [class.popup_change]="popup_variable" class="pop-up-background">
+    <div class="pop-up">
+        <div class="pop-up-header">
+        <img (click)="popUpRemove()" src="assets/arrow-btn-left-noshadow.svg" alt="">
+        <h3>Uw vastgoed verkopen?</h3>
+            </div>
+        <div  cdkScrollable class="pop-up-container">
+        <div class="pop-up-container-first">
+            
+            <h5>In 3 stappen uw ontroerend goed verkopen</h5>
+            <br>
+            <div *ngFor="let sentence of sentences">
+                <img src="{{ sentence.picture }}">
+                <p> {{ sentence.paragraph }}</p>
+            </div>
+            <br>
+            <div class="sentencetwo" *ngFor="let sentence of sentencesTwo">
+                <img src="assets/tick.svg">
+                <p> {{ sentence.paragraphTwo }}</p>
+            </div>
+        </div>
+        <div class="pop-up-container-second">
+            <h5>Vul onderstaande formulier in en wij nemen zo spoedig mogelijk contact met u op</h5>
+            <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+            <div>
+                <div class="name-phone">
+                    <input formControlName="Fullname" type="text" placeholder="Naam*">
+                    <input formControlName="Phonenumber" type="text" placeholder="Telefoonnummer*">
+                </div>
+                    <input formControlName="Email" type="text" placeholder="E-mail*">
+            </div>
+            <br>
+            <div>
+                <input formControlName="info1" type="text" placeholder="Wat is het adres van het onroerend goed?">
+                <input formControlName="info2"  type="text" placeholder="Aantal woonlagen van het onroerend goed?">
+                <input formControlName="info3" type="text" placeholder="Worden er woonlagen verhuurd?">
+                <input formControlName="info4" type="text" placeholder="Wenst u het pand zelf te blijven bewonen?">
+                <input formControlName="info5"  type="text" placeholder="Wat is uw vraagprijs?">
+            </div>
+            <div>
+            <button type="submit" [disabled]="!FormData.valid" class="btn-large-other">VERSTUUR</button>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
+</div>
