@@ -1,17 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { HostListener } from '@angular/core'
+import { PopUpComponent } from './pop-up/pop-up.component';
 
 const about: any = document.getElementById("over")
 
 @Component({
   selector: 'app-header-new-new',
   templateUrl: './header-new-new.component.html',
-  styleUrls: ['./header-new-new.component.scss']
+  styleUrls: ['./header-new-new.component.scss'],
 })
 export class HeaderNewNewComponent implements OnInit {
     header_variable = false
     popup_variable: any 
     closed_variable:boolean = false 
+
+  @ViewChild(PopUpComponent) child!: PopUpComponent; 
+
+  onAddPopup() {
+    this.child.popUpAdd()
+  }
+
     
   @HostListener("document:scroll")
   scrollFunction() {
@@ -32,22 +40,18 @@ export class HeaderNewNewComponent implements OnInit {
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
-
   constructor() { }
 
   ngOnInit(): void {
 
   }
 
-
   toAbout() {
     document.getElementById("over")?.scrollIntoView({behavior:"smooth"})
   }
   
-  popUpClick() {
-    this.popup_variable = true
 
-  }
+
 
 
 

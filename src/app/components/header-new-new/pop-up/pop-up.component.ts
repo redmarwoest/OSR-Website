@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import { ContactService } from 'src/app/contact.service';
 
@@ -26,9 +26,9 @@ export class PopUpComponent implements OnInit {
   sentences = sentences
   sentencesTwo = sentencesTwo 
   @Input() private element: any;
-  @Input() popup_variable = false
+  @Output() popup_variable = false
   
-
+  
   FormData!: FormGroup;
 
   constructor( private builder: FormBuilder, private contact: ContactService) { }
@@ -43,8 +43,6 @@ export class PopUpComponent implements OnInit {
       info3: new FormControl(''),
       info4: new FormControl(''),
       info5: new FormControl(''),
-      
-    
       })
   }
 
@@ -62,6 +60,10 @@ console.log({ error })
 
   popUpRemove() {
     this.popup_variable = false
+  }
+
+  popUpAdd() {
+    this.popup_variable = true
   }
 
 }

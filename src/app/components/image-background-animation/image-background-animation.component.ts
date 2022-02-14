@@ -23,6 +23,7 @@ export class ImageBackgroundAnimationComponent implements OnInit {
   @Input('title') title: any;
   @Input() styles: any = {};
   @Input() shadowStyle: any = {};
+  @Input() margintop: any = {};
 
 
 

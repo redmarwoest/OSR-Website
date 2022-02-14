@@ -1,4 +1,4 @@
-<div class="team-container">
+<div [@cardAnimation]="teams.length" class="team-container">
 <div class="team-container-element" *ngFor="let team of teams">
     <div class="team-image">
         <img src="{{ team.image }}" alt="">
@@ -6,6 +6,7 @@
     <div class="team-tekst">
         <h4> {{ team.name}} </h4>
         <h6> {{ team.functie }} </h6>
+        <hr>
         <p> {{ team.paragraph }} </p>
     </div>
 

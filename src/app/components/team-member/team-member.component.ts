@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
 
 const teams = [
   {image: "assets/Foto_Oscar.jpg", 
@@ -26,7 +27,20 @@ const teams = [
 @Component({
   selector: 'app-team-member',
   templateUrl: './team-member.component.html',
-  styleUrls: ['./team-member.component.scss']
+  styleUrls: ['./team-member.component.scss'],
+  animations: [
+    trigger('cardAnimation', [
+      transition('* => *', [
+        query(':enter', style({ opacity: 0 }), { optional: true }),
+        query(':enter', stagger('400ms', [
+          animate('0.8s 0.8s ease', keyframes([
+            style({ opacity: 0, transform: 'translateY(40px)', offset: 0 }),
+            style({ opacity: .5, transform: 'translateY(20px) scale(1)', offset: 0.3 }),
+            style({ opacity: 1, transform: 'translateY(0)', offset: 1 }),
+          ]))]), { optional: true }),
+      ]),
+    ]),
+  ]
 })
 export class TeamMemberComponent implements OnInit {
   teams = teams 
