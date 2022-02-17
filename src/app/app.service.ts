@@ -77,17 +77,16 @@ export class HouseService {
 
     getHouses() {
         return this.houses;
+  
     }
 
     getHouse(id: number) {
         const house = this.houses.find(
             (data) => {
+              console.log(data.id)
                 return data.id === id;
             }
         );
         return house
     }
-
-
-
 }

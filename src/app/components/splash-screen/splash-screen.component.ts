@@ -16,7 +16,6 @@ export class SplashScreenComponent implements OnInit {
   };
 
   animationCreated(animationItem: AnimationItem): void {
-    console.log(animationItem);
   }
 
   ngOnInit(): void {

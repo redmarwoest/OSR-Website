@@ -4,7 +4,7 @@
     <div class="house-detail-first">
         <img src="{{ house.imgPlaceholder }}" alt="">
     </div>
-    <div [routerLink]="['/', house.id]"  class="house-detail-second">
+    <div [routerLink]="['', house.street]"  class="house-detail-second">
         <p> {{ house.type }} | <span>{{ house.m2 }}㎡ </span></p>
         <h5>{{ house.street}}  <span> | {{ house.city }}</span></h5>
         <p> {{ house.information }}</p>

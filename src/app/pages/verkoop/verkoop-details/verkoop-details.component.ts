@@ -10,20 +10,7 @@ import { HouseService } from 'src/app/app.service';
   styleUrls: ['./verkoop-details.component.scss']
 })
 export class VerkoopDetailsComponent implements OnInit {
-  // house: {
-  //   id: number, 
-  //   imgPlaceholder: string, 
-  //   type: string, 
-  //   m2: string,
-  //   street: string, 
-  //   city: string, 
-  //   status: string, 
-  //   information: string, 
-  //   bedBad:string, 
-  //   etage:string
-  //  }
-
-  house=""
+  house: any
 
   constructor(private _location: Location,
               private activatedRoute:ActivatedRoute, 
@@ -31,23 +18,20 @@ export class VerkoopDetailsComponent implements OnInit {
             ) { }
 
   ngOnInit(): void {
-      console.log(this.activatedRoute.snapshot.params)
-      this.house=this.activatedRoute.snapshot.params['city']
-
+    this.activatedRoute.paramMap.subscribe((route: ParamMap) => {
+      const id = route.get('id') as unknown as number;
+      this.onGetHouse(id)
+    })
   }
     
-    // onGetHouse(id: string) {
-    //   this.houseService.getHouse(id).subscribe(
-    //    response => {
-    //     console.log(response)
-    //       this.house = response;}
-  
-    //   )
-    // }
-    
+  onGetHouse(id: number) {
+    this.house = this.houseService.getHouse(id)
 
-  
+  }
+
   backClicked() {
     this._location.back()
   }
 }
+
+

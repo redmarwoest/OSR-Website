@@ -38,7 +38,7 @@
                 <input formControlName="info5"  type="text" placeholder="Wat is uw vraagprijs?">
             </div>
             <div>
-            <button type="submit" [disabled]="!FormData.valid" class="btn-large-other">VERSTUUR</button>
+            <button (click)="onSubmit(FormData)" type="submit" [disabled]="!FormData.valid" class="btn-large-other">VERSTUUR</button>
             </div>
         </form>
         </div>
