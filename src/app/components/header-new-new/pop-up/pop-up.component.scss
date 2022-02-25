@@ -7,7 +7,7 @@
     z-index: 1000;
     display: none;
     position: fixed;
-    transition: transform 1s ease-in-out;
+    transition: 1s
 }
 
 .popup_change {
@@ -21,6 +21,7 @@
     margin-top: 30px;
     border-radius: 10px 10px 10px 10px;
     z-index: 1000;
+    transition: 1s
 
 }
 

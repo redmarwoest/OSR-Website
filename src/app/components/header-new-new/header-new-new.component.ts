@@ -23,7 +23,7 @@ export class HeaderNewNewComponent implements OnInit {
     
   @HostListener("document:scroll")
   scrollFunction() {
-    if(document.body.scrollTop > 270 || document.documentElement.scrollTop > 270){
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
       this.header_variable = true;
     }
     else {

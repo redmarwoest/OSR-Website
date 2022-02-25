@@ -3,17 +3,39 @@
     [styles]="{height:'32vh'}"
     >
 </app-image-background-animation>
-<app-video-tekst 
-    [title]="'Advies'"
-    [paragraph]="'
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                It has survived not only five centuries, but also the leap into electronic typesetting.
-                '"
-    [video]="'https://www.youtube.com/watch?v=uD_usH85xB0&t=122s&ab_channel=RealEstateMasterclass'"
+<div @titleAnimation class="tekst-container">
+    <div class="tekst-container-first">
+        <h5>Ons Advies</h5>
+        <hr>
+        <p>Wij bieden ook een adviserende rol op het gebied van investeren en aan- & verkoop van vastgoed.
+            <br>
+            <br>
+            Wij bieden onze klanten, met onze ruime ervaring, ook de mogelijkheid om advies te krijgen omtrent het investeren in residentieel en commercieel vastgoed. Wij zullen u adviseren bij het gehele investeringstraject. Denk hierbij aan besteedbaar kapitaal, uw strategie, rendement, taxatie, puntentelling, herfinanciering, netwerk etc. 
+            <br>
+            <br>
+            Naast het investeringsadvies, kunt u bij ons ook terecht voor het aan- en verkopen van vastgoed.
+            </p>
+    </div>
+    <div class="tekst-container-second">
+        <div class="tekst-container-second-one">
+            <h4>Verkoop</h4>
+            <hr>
+            <p>Wilt u een woning verkopen, dan bent u bij ons bij het juiste adres. Met het actieve en betrouwbare netwerk, hebben wij uw woning snel en vakkundig verkocht. </p>
+            <button (click)="onAddPopup()" class="btn-large-other">VERKOOP</button>
+        </div>
+        <div class="tekst-container-second-two">
+            <h4>Aankoop</h4>
+            <hr>
+            <p>Wilt u een woning aankopen dan kunt u een blik werpen op ons aanbod Staat hier niks voor u bij, neemt u dan gerust vrijblijvend contact met ons op.
+            </p>
+            <div>
+                <button class="btn-large-other">AANKOOP</button>
+                <button class="btn-large-other">CONTACT</button>
+            </div>
 
-    >
-</app-video-tekst>
+        </div>
+    </div>
+</div>
+
 
 <app-reviews></app-reviews>

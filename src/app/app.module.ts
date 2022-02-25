@@ -21,7 +21,6 @@ import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { HouseDetailNewComponent } from './components/house-detail-new/house-detail-new.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
-import { DescriptionBlocksComponent } from './components/description-blocks/description-blocks.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -31,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './contact.service';
 import { TeamComponent } from './pages/team/team.component';
 import { TeamMemberComponent } from './components/team-member/team-member.component';
+import { SwiperModule } from "swiper/angular";
 
 
 export function playerFactory() {
@@ -52,7 +52,6 @@ export function playerFactory() {
     HeaderNewNewComponent,
     HouseDetailNewComponent,
     ReviewsComponent,
-    DescriptionBlocksComponent,
     CarouselComponent,
     PopUpComponent,
     TeamComponent,
@@ -67,7 +66,8 @@ export function playerFactory() {
     LottieModule.forRoot({ player: playerFactory }),
     IvyCarouselModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SwiperModule,
 
   ],
   providers: [HouseService, ContactService],

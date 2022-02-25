@@ -7,15 +7,29 @@
         <img class="back" src="assets/arrow-btn-large-left.svg" alt="">
         <h6>Terug naar woningen</h6>
     </div>
-    <app-description-blocks
-        [paragraph]="'{{}}'" 
-        [button]="'{{}}'" 
-        [infoOne]="'{{}}'" 
-        [infoTwo]="'{{}}'" 
-        [infoThree]="'{{}}'" 
-    ></app-description-blocks>
+    <div class="description-container">
+        <div class="description-first">
+            <h5>Over</h5>
+            <p>{{ house?.paragraph }}</p>
+            <button class="btn-small">Verkocht</button>
+        </div>
+        <div class="description-second">
+            <div>
+                <h6>Vierkante Meters</h6>
+                <h3>hi</h3>
+            </div>
+            <div>
+                <h6>Bed/Badkamers</h6>
+                <h3>hi</h3>
+            </div>
+            <div>            
+                <h6>Etage</h6>
+                <h3>hi</h3>
+            </div>
+        </div>
+    </div>
     <div class="pictures-total">
-        <h6>{{house?.id}}</h6>
+        <h6>Foto's</h6>
         <img  class="pictures" src="assets/arrow-btn-large-down.svg" alt="">
     </div>
     <app-carousel

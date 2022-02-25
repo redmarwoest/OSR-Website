@@ -19,8 +19,8 @@ export class VerkoopDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((route: ParamMap) => {
-      const id = route.get('id') as unknown as number;
-      this.onGetHouse(id)
+      const id = route.get('id') as string;
+      this.onGetHouse(+id)
     })
   }
     
