@@ -26,17 +26,12 @@ img {
     cursor: pointer;
     margin-top: 50px;
     margin-bottom: 50px;
-    
 }
 
 .back {
     margin-right: 10px;
 }
 
-h4 {
-    color: black;
-    font-weight: 400;
-}
 
 .back-button:hover img {
     transform: translate3d(-2px, 0px, 0px);
@@ -92,6 +87,39 @@ h4 {
     color: black;
 }
 
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+
 @media only screen and (min-width: 600px) {
     .description-second {
         flex-direction: row;
@@ -103,7 +131,7 @@ h4 {
     .back-button {
         margin: auto;
         width: 80%;
-        margin-top: -80px;
+        margin-top: -50px;
         margin-bottom: 40px;
         display: flex;
         align-items: center;
@@ -116,6 +144,16 @@ h4 {
     .description-container {
         flex-direction: row;
         max-width: 1200px;
+        margin-top: 60px;
     }   
+
+    .pictures-total {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .description-second {
+        margin-top: auto;
+    }
 }
 

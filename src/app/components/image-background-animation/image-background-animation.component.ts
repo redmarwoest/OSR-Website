@@ -20,7 +20,7 @@ import { trigger, style, transition, animate, keyframes} from '@angular/animatio
   ]
 })
 export class ImageBackgroundAnimationComponent implements OnInit {
-  @Input('title') title: any;
+  @Input() title: any = {};
   @Input() styles: any = {};
   @Input() shadowStyle: any = {};
   @Input() margintop: any = {};

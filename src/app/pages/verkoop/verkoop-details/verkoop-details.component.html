@@ -1,5 +1,5 @@
 <app-image-background-animation 
-    [title]="'Van Ostadestraat 46'" 
+    [title]="house.street"
     [styles]="{height:'32vh'}"
     [shadowStyle]="{height:'32vh'}"
     ></app-image-background-animation> 
@@ -10,21 +10,21 @@
     <div class="description-container">
         <div class="description-first">
             <h5>Over</h5>
-            <p>{{ house?.paragraph }}</p>
-            <button class="btn-small">Verkocht</button>
+            <p>{{ house.information }}</p>
+            <button class="btn-small">{{ house.status }}</button>
         </div>
         <div class="description-second">
             <div>
                 <h6>Vierkante Meters</h6>
-                <h3>hi</h3>
+                <h3>{{ house.m2 }}</h3>
             </div>
             <div>
-                <h6>Bed/Badkamers</h6>
-                <h3>hi</h3>
+                <h6>Bouwjaar</h6>
+                <h3>{{ house.bouwjaar }}</h3>
             </div>
             <div>            
-                <h6>Etage</h6>
-                <h3>hi</h3>
+                <h6>Energielabel</h6>
+                <h3>{{ house.energielabel }}</h3>
             </div>
         </div>
     </div>
@@ -32,5 +32,10 @@
         <h6>Foto's</h6>
         <img  class="pictures" src="assets/arrow-btn-large-down.svg" alt="">
     </div>
-    <app-carousel
-    ></app-carousel>
+    <swiper
+    [config]="config"
+    class="mySwiper"
+  >
+    <ng-template *ngFor="let image of house.images" swiperSlide><img src="{{ image }}" alt=""></ng-template>
+  </swiper>
+

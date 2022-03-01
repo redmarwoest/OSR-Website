@@ -6,25 +6,12 @@ SwiperCore.use([Pagination,
 ]);
 
 const images = [
-  {
-    src: "assets/chandeleer.png",
-    alt: 'Image 1',
-  }, {
-    src: "assets/chandeleer.png",
-    alt: 'Image 2'
-  }, {
-    src: "assets/chandeleer.png",
-    alt: 'Image 3'
-  }, {
-    src: "assets/chandeleer.png",
-    alt: 'Image 4'
-  }, {
-    src: "assets/chandeleer.png",
-    alt: 'Image 5'
-  }, {
-    src: "assets/chandeleer.png",
-    alt: 'Image 6'
-  }    
+  "assets/chandeleer.png", 
+  "assets/chandeleer.png", 
+  "assets/chandeleer.png", 
+  "assets/chandeleer.png", 
+  "assets/chandeleer.png", 
+  "assets/chandeleer.png", 
 ]
 
 
@@ -57,19 +44,6 @@ export class CarouselComponent implements OnInit {
 
 
   images = images
-  slidesperview: any
-
-  swiper = new SwiperCore('.mySwiper', {
-    slidesPerView: 3,
-    breakpoints: {
-        499: {
-            slidesPerView: 1,
-        },
-        999: {
-            slidesPerView: 2,
-        }
-    }
-});
 
 
   constructor() { }
