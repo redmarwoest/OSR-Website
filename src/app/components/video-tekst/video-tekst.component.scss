@@ -2,24 +2,21 @@
     display: flex;
     flex-direction: column;
     margin:auto;
-    width: 90%;
-    margin-bottom: 100px;
+    width: 95%;
 }
 
 .video-tekst-first {
     margin: auto;
     width: 100%;
-    max-width: 400px;
-
+    max-width: 600px;
+    margin-bottom: 24px;
 }
 
 iframe {
     width: 100%;
-    margin: auto;
     border-style: none;
-    border-radius: 10px;
-    max-width: 450px;
-    height: 350px;
+    border-radius: 5px;
+    height: 340px;
 }
 
 .video-tekst-second {
@@ -27,104 +24,47 @@ iframe {
     margin-top: 30px;
     max-width: 600px;
     margin: auto;
-    margin-top: 30px;
     width: 95%;
-    
 }
 
 .video-tekst-second-text  {
     background-color: #F8F8F8;
     padding: 20px;
     border-radius: 5px;
-
 }
 
-.video-tekst-third div {
-    background-color: #F8F8F8;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 24px;
+.video-tekst-second button {
+    margin-top: 16px;
 }
 
-.video-tekst-buttons {
-    margin-top: 20px;
-    display: flex;
-
-}
-
-.video-tekst-buttons button {
-    margin-right: auto;
-    margin-bottom: 10px
-}
-
-.p-klein {
-    font-weight: 300;
-    font-size: 15px;
-    font-style: italic;
-}
-
-h5 {
-    margin-top: -5px;
-    margin-bottom: 5px;
-}
-
-h4 {
-    color: black;
-}
-
-button {
-    margin-top: 8px;
-}
-
-
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
     
     .video-tekst-container {
-        margin-bottom: 140px;
-        max-width: 1200px;
         flex-direction: row;
+        max-width: 1150px;
         align-items: center;
     }
 
-    .video-tekst-first {
-        margin-top: 0px;
+    .video-tekst-second {
+        margin-top: 40px;
+        max-width: 400px;
     }
 
+}
+
+ @media only screen and (min-width: 1200px) {
+
     .video-tekst-first {
-        margin: auto;
-        width: 90%;
-        max-width: 600px;
+        max-width: 650px;
     }
     
     iframe {
-        width: 90%;
-        margin: auto;
-        border-style: none;
-        border-radius: 10px;
-        max-width: 600px;
-        height: 350px;
+        height: 380px;
     }
-}
 
-    @media only screen and (min-width: 1200px) {
-        
-        .video-tekst-second {
-            margin-top: 0px;
-        }
-        
-        .video-tekst-third {
-            display: flex;
-        }
+    .video-tekst-second {
+        margin-top: 60px;
 
-        .video-tekst-third-first {
-            margin-right: 12px;
-        }
-
-        .video-tekst-third-second {
-            margin-left: 12px;
-        }
-
-
-
+    }
 
 }

@@ -26,6 +26,10 @@ export class VideoTekstComponent implements OnInit {
   @Input() secondTitle: any;
   @Input() paragraph: any
 
+  toAbout() {
+    document.getElementById("over")?.scrollIntoView({behavior:"smooth"})
+  }
+  
 
   constructor() { }
 

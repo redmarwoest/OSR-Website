@@ -6,10 +6,10 @@ import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
-  
+
 })
 export class ContactService {
-  private api = 'https://mailthis.to/redmarwoest1@gmail.com'
+  private api = 'https://formspree.io/f/xdobzdkj'
 
   constructor( private http: HttpClient) { }
 

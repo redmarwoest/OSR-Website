@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { HouseService } from 'src/app/app.service';
+import { HouseService } from 'src/app/services/app.service';
 import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
 
 @Component({

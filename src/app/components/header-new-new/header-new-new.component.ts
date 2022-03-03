@@ -20,7 +20,6 @@ export class HeaderNewNewComponent implements OnInit {
     this.child.popUpAdd()
   }
 
-    
   @HostListener("document:scroll")
   scrollFunction() {
     if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
@@ -34,10 +33,6 @@ export class HeaderNewNewComponent implements OnInit {
   closeNav() {
     const ele = document.getElementById("check") as HTMLInputElement;
     ele.checked = false;
-  }
-
-  scrollToElement($element: any): void {
-    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
   constructor() { }

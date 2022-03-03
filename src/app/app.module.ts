@@ -25,12 +25,12 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PopUpComponent } from './components/header-new-new/pop-up/pop-up.component'
-import { HouseService } from './app.service';
+import { HouseService } from './services/app.service';
 import { ReactiveFormsModule } from '@angular/forms';  
-import { ContactService } from './contact.service';
 import { TeamComponent } from './pages/team/team.component';
 import { TeamMemberComponent } from './components/team-member/team-member.component';
 import { SwiperModule } from "swiper/angular";
+import { ContactService } from 'src/app/services/contact.service';
 
 
 export function playerFactory() {

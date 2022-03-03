@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
 
 const teams = [
-  {image: "assets/Foto_Oscar.jpg", 
+  {image: "assets/Image 4.png", 
   name: "Oscar van der Mark", 
   functie: "Founder",
   paragraph: "OSR Real Estate is een jong en dynamisch bedrijf. In november 2019 is er gestart met het investeren in residentieel vastgoed. In de daaropvolgende tijd is er stevig gebouwd aan een actief en betrouwbaar netwerk. "

@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Location } from '@angular/common'
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { HouseService } from 'src/app/app.service';
+import { HouseService } from 'src/app/services/app.service';
 import SwiperCore, { Pagination, Swiper, SwiperOptions,  } from "swiper";
 
 // install Swiper modules

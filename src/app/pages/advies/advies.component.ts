@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { trigger, style, transition, animate, keyframes} from '@angular/animations';
 import { PopUpComponent } from 'src/app/components/header-new-new/pop-up/pop-up.component';
+import { HeaderNewNewComponent } from 'src/app/components/header-new-new/header-new-new.component';
 
 @Component({
   selector: 'app-advies',
@@ -23,9 +24,14 @@ import { PopUpComponent } from 'src/app/components/header-new-new/pop-up/pop-up.
 export class AdviesComponent implements OnInit {
 
   @ViewChild(PopUpComponent) child!: PopUpComponent; 
+  @ViewChild(HeaderNewNewComponent) childTwo!: HeaderNewNewComponent; 
 
-  onAddPopup() {
+  OnAddPopup() {
     this.child.popUpAdd()
+  }
+
+  onToAbout() {
+    this.childTwo.toAbout()
   }
 
   constructor() { }

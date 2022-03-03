@@ -2,6 +2,14 @@
     display: grid;
     grid-template-columns: auto;
     margin: auto;
+
+}
+
+.review-tekst {
+    width: 86%;
+    margin: auto;
+    max-width: 1150px;
+    margin-top: 30px;
 }
 
 .review-whole {
@@ -13,7 +21,7 @@
     border-radius: 5px;
     max-width: 350px;
     margin-bottom: 20px;
-
+    margin-top: 10px;
 }
 
 .review-whole-first {
@@ -42,8 +50,12 @@ h4 {
     .review-container {
         grid-template-columns: auto auto auto;
         max-width: 1220px;
-        margin-top: 48px
+        margin-top: 10px
+    }
 
+    .review-whole {
+        margin-bottom: 30px;
+    
     }
 
 }

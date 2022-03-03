@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import { ContactService } from 'src/app/contact.service';
+import { ContactService } from 'src/app/services/contact.service';
 
 const sentences = [
   {picture: "assets/form.svg", paragraph: "Neem contact op via de telefoon, email of vul het digital form in" },
@@ -27,9 +27,12 @@ export class PopUpComponent implements OnInit {
   sentencesTwo = sentencesTwo 
   @Input() private element: any;
   @Output() popup_variable = false
-  
-  
+  showMsg = false
+  showForm = true
+
   FormData!: FormGroup;
+
+  
 
   constructor( private builder: FormBuilder, private contact: ContactService) { }
 
@@ -43,20 +46,20 @@ export class PopUpComponent implements OnInit {
       info3: new FormControl(''),
       info4: new FormControl(''),
       info5: new FormControl(''),
-      })
+    })
   }
 
-onSubmit(FormData: any) {
-  console.log(FormData)
-    this.contact.PostMessage(FormData)
-    .subscribe(response => {
-location.href = 'https://mailthis.to/confirm'
-console.log(response)
-}, error => {
-console.warn(error.responseText)
-console.log({ error })
-})
-}
+  onSubmit(FormData: any) {
+      this.contact.PostMessage(FormData).subscribe(response => {
+        // location.href = 'https://formsubmit.co/confirm'
+        this.showMsg = true
+        this.showForm = false
+        }, error => {
+        console.warn(error.responseText)
+        console.log({ error })
+  })
+    this.FormData.reset();
+  }
 
   popUpRemove() {
     this.popup_variable = false

@@ -26,7 +26,7 @@ export class CarouselComponent implements OnInit {
     pagination: {
       clickable: true
     },
-    slidesPerView: 3,
+    slidesPerView: 2,
     breakpoints: {
       0: {
           slidesPerView: 1,
@@ -35,7 +35,7 @@ export class CarouselComponent implements OnInit {
           slidesPerView: 2,
       },
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       }
     },
     spaceBetween: 0

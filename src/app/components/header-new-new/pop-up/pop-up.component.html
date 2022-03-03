@@ -20,27 +20,31 @@
             </div>
         </div>
         <div class="pop-up-container-second">
-            <h5>Vul onderstaande formulier in en wij nemen zo spoedig mogelijk contact met u op</h5>
-            <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
-            <div>
-                <div class="name-phone">
-                    <input formControlName="Fullname" type="text" placeholder="Naam*">
-                    <input formControlName="Phonenumber" type="text" placeholder="Telefoonnummer*">
+            <h5 *ngIf="showForm">Vul onderstaande formulier in en wij nemen zo spoedig mogelijk contact met u op</h5>
+            <form method="POST" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)" >
+            <div class="succes-message" *ngIf="showMsg"><h5>success</h5></div>
+            <div *ngIf="showForm">
+                <div>
+                    <div class="name-phone">
+                        <input formControlName="Fullname" type="text" placeholder="Naam*">
+                        <input formControlName="Phonenumber" type="text" placeholder="Telefoonnummer*">
+                    </div>
+                        <input formControlName="Email" type="text" placeholder="E-mail*">
                 </div>
-                    <input formControlName="Email" type="text" placeholder="E-mail*">
+                <br>
+                <div>
+                    <input formControlName="info1" type="text" placeholder="Wat is het adres van het onroerend goed?">
+                    <input formControlName="info2"  type="text" placeholder="Aantal woonlagen van het onroerend goed?">
+                    <input formControlName="info3" type="text" placeholder="Worden er woonlagen verhuurd?">
+                    <input formControlName="info4" type="text" placeholder="Wenst u het pand zelf te blijven bewonen?">
+                    <input formControlName="info5"  type="text" placeholder="Wat is uw vraagprijs?">
+                </div>
+                <div>
+                <button type="submit" [disabled]="!FormData.valid" class="btn-large-other">VERSTUUR</button>
+                </div>
             </div>
-            <br>
-            <div>
-                <input formControlName="info1" type="text" placeholder="Wat is het adres van het onroerend goed?">
-                <input formControlName="info2"  type="text" placeholder="Aantal woonlagen van het onroerend goed?">
-                <input formControlName="info3" type="text" placeholder="Worden er woonlagen verhuurd?">
-                <input formControlName="info4" type="text" placeholder="Wenst u het pand zelf te blijven bewonen?">
-                <input formControlName="info5"  type="text" placeholder="Wat is uw vraagprijs?">
-            </div>
-            <div>
-            <button (click)="onSubmit(FormData)" type="submit" [disabled]="!FormData.valid" class="btn-large-other">VERSTUUR</button>
-            </div>
-        </form>
+            </form>
+
         </div>
         </div>
     </div>

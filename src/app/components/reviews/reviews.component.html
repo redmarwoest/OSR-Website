@@ -1,9 +1,13 @@
-<div @titleAnimation class="review-container">
+<div @titleAnimation>
+<div class="review-tekst">
+    <h3>Reviews</h3>
+    <hr>
+</div>
+<div class="review-container">
     <div class="review-whole" *ngFor="let review of reviews">
         <div class="review-whole-first" >
         <img src=" {{ review.image }}" alt="">
             <h4>{{ review.name }}</h4>
-            
         </div>
         <hr>
         <div div class="review-whole-second" >
@@ -11,3 +15,4 @@
         </div>
     </div>
 </div>
+</div> 
