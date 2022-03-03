@@ -21,7 +21,6 @@ import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { HouseDetailNewComponent } from './components/house-detail-new/house-detail-new.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PopUpComponent } from './components/header-new-new/pop-up/pop-up.component'
@@ -52,7 +51,6 @@ export function playerFactory() {
     HeaderNewNewComponent,
     HouseDetailNewComponent,
     ReviewsComponent,
-    CarouselComponent,
     PopUpComponent,
     TeamComponent,
     TeamMemberComponent,

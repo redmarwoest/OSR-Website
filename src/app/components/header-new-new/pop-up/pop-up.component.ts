@@ -51,7 +51,6 @@ export class PopUpComponent implements OnInit {
 
   onSubmit(FormData: any) {
       this.contact.PostMessage(FormData).subscribe(response => {
-        // location.href = 'https://formsubmit.co/confirm'
         this.showMsg = true
         this.showForm = false
         }, error => {

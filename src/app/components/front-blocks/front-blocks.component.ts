@@ -36,7 +36,6 @@ options: AnimationOptions = {
   path: 'assets/data_load.json',
 };
 
-
 animationCreated(animationItem: AnimationItem): void {
   console.log(animationItem);
 }
