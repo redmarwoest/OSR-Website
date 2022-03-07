@@ -122,9 +122,25 @@ button {
     margin-top: 20px;
 }
 
-input.ng-invalid {
-    border: 1px solid red;
+.succes-message {
+ margin-top: 100px;
+
+    img {
+    width: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+    }
+
+    h5 {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 100px;
+        
+    }
 }
+
+
 
 
 @media only screen and (min-width: 1000px) { 

@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 import {  trigger, transition, group, query, style, animate } from '@angular/animations';
+import { Title, Meta } from '@angular/platform-browser';
 
 
 @Component({
@@ -77,8 +77,20 @@ import {  trigger, transition, group, query, style, animate } from '@angular/ani
     ])
 ]
 })
-export class AppComponent {
-  title = 'osr-website';
+export class AppComponent implements OnInit {
+
+    title = 'OSR Realestate';
+ 
+    ngOnInit(): void {  
+        this.titleService.setTitle(this.title);
+        this.metaService.addTags([
+      {name: 'keywords', content: 'Angular, Universal, Example'},
+      {name: 'description', content: 'Angular Universal Example'},
+      {name: 'robots', content: 'index, follow'}
+    ]);
+  }
+
+  constructor(private titleService: Title, private metaService: Meta) {}
 
   getDepth(outlet: any) {
     return outlet.activatedRouteData['depth']

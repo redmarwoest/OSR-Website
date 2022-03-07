@@ -21,8 +21,11 @@
         </div>
         <div class="pop-up-container-second">
             <h5 *ngIf="showForm">Vul onderstaande formulier in en wij nemen zo spoedig mogelijk contact met u op</h5>
-            <form method="POST" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)" >
-            <div class="succes-message" *ngIf="showMsg"><h5>success</h5></div>
+            <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)" >
+            <div class="succes-message" *ngIf="showMsg">
+                <img src="assets/panden.svg" alt="">
+                <h5>Dankjewel voor uw bericht, wij kom zo snel mogelijk bij u terug.</h5>
+            </div>
             <div *ngIf="showForm">
                 <div>
                     <div class="name-phone">
