@@ -1,41 +1,40 @@
-<app-image-background-animation 
-    [title]="house.street"
-    [styles]="{height:'32vh'}"
-    [shadowStyle]="{height:'32vh'}"
-    ></app-image-background-animation> 
-    <div (click)="backClicked()" class="back-button">
-        <img class="back" src="assets/arrow-btn-large-left.svg" alt="">
-        <h6>Terug naar woningen</h6>
+<app-image-background-animation
+  [title]="house.street"
+  [styles]="{ height: '32vh' }"
+  [shadowStyle]="{ height: '32vh' }"
+></app-image-background-animation>
+<div (click)="backClicked()" class="back-button">
+  <img class="back" src="assets/arrow-btn-large-left.svg" alt="" />
+  <h6>Terug naar woningen</h6>
+</div>
+<div class="description-container">
+  <div class="description-first">
+    <h5>Over {{ house.type }}</h5>
+    <p>{{ house.information }}</p>
+    <button class="btn-small">{{ house.status }}</button>
+    <button class="btn-small">{{ house.price }}</button>
+  </div>
+  <div class="description-second">
+    <div>
+      <h6>Vierkante Meters</h6>
+      <h3>{{ house.m2 }}㎡</h3>
     </div>
-    <div class="description-container">
-        <div class="description-first">
-            <h5>Over</h5>
-            <p>{{ house.information }}</p>
-            <button class="btn-small">{{ house.status }}</button>
-        </div>
-        <div class="description-second">
-            <div>
-                <h6>Vierkante Meters</h6>
-                <h3>{{ house.m2 }}㎡</h3>
-            </div>
-            <div>
-                <h6>Bouwjaar</h6>
-                <h3>{{ house.bouwjaar }}</h3>
-            </div>
-            <div>            
-                <h6>Energielabel</h6>
-                <h3>{{ house.energielabel }}</h3>
-            </div>
-        </div>
+    <div>
+      <h6>Bouwjaar</h6>
+      <h3>{{ house.year }}</h3>
     </div>
-    <div class="pictures-total">
-        <h6>Foto's</h6>
-        <img  class="pictures" src="assets/arrow-btn-large-down.svg" alt="">
+    <div>
+      <h6>Energielabel</h6>
+      <h3>{{ house.energielabel }}</h3>
     </div>
-    <swiper
-    [config]="config"
-    class="mySwiper"
-  >
-    <ng-template *ngFor="let image of house.images" swiperSlide><img src="{{ image }}" alt=""></ng-template>
-  </swiper>
-
+  </div>
+</div>
+<div class="pictures-total">
+  <h6>Foto's</h6>
+  <img class="pictures" src="assets/arrow-btn-large-down.svg" alt="" />
+</div>
+<swiper [config]="config" class="mySwiper">
+  <ng-template *ngFor="let image of house.images" swiperSlide
+    ><img src="{{ image }}" alt=""
+  /></ng-template>
+</swiper>

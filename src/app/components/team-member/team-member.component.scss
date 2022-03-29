@@ -1,68 +1,62 @@
 .team-container {
-    display: grid;
-    margin:auto;
-    width: 90%;
-    max-width: 1250px;
+  display: grid;
+  margin: auto;
+  width: 90%;
+  max-width: 1050px;
 }
 
 .team-container-element {
-    width: 300px;
-    margin: auto;
-    margin-bottom: 40px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
 }
 
 .team-image img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .team-tekst {
-    width: 270px;
-    background-color: #F8F8F8;
-    padding: 15px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: -10px;
-    border-radius: 0px 0px 5px 5px;
-
+  width: 270px;
+  background-color: #f8f8f8;
+  padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: -10px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 h4 {
-    color: black;   
+  color: black;
 }
 
 h6 {
-    font-weight: 600;
-    margin-top: -5px;
+  font-weight: 600;
+  margin-top: -5px;
 }
-
 
 hr {
-    border-color: white;
+  border-color: white;
 }
 
-@media only screen and (min-width: 560px) {
-
-    .team-container {
-        grid-template-columns: auto auto;
-    }
-
+@media only screen and (min-width: 700px) {
+  .team-container {
+    grid-template-columns: auto auto;
+  }
 }
 
 @media only screen and (min-width: 960px) {
-
-    .team-container {
-        grid-template-columns: auto auto auto;
-    }
-
+  .team-container {
+    grid-template-columns: auto auto auto;
+    align-self: start;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-
-    .team-container {
-        grid-template-columns: auto auto auto auto;
-    } 
-
+  .team-container {
+    grid-template-columns: auto auto auto;
+  }
 }

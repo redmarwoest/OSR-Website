@@ -1,73 +1,67 @@
 .counter-block-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
 }
 
-.counter-block hr{
-    width: 250px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.counter-block hr {
+  width: 250px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .counter-block-third {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    justify-content: space-between;
-    width: 170px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+  width: 170px;
+  cursor: pointer;
 }
 
 .counter-block-third:hover img {
-    transform: translate3d(2px, 0px, 0px);
-    transition: transform .2s ease-in-out;
+  transform: translate3d(2px, 0px, 0px);
+  transition: transform 0.2s ease-in-out;
 }
 
 .second-hr {
-    width: 300px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .counter-block-second img {
-    margin-top: 15px
+  margin-top: 15px;
 }
 
-.counter-block-third img { 
-    transition: transform .2s ease-in-out;
-    cursor: pointer;
+.counter-block-third img {
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
+@media only screen and (min-width: 700px) {
+  .counter-block-container {
+    margin-top: 100px;
+  }
 
+  .counter-block {
+    display: flex;
+    flex-direction: row;
+  }
 
+  .counter-block hr {
+    width: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 
-@media only screen and (min-width: 700px) { 
-
-    .counter-block-container {
-        margin-top: 100px;
-    }
-
-    .counter-block {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .counter-block hr{
-        width: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-    
-    .second-hr {
-        width: 80%;
-        max-width: 1000px;
-
-    }
-    
+  .second-hr {
+    width: 80%;
+    max-width: 1000px;
+  }
 }

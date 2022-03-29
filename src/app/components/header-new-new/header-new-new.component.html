@@ -1,53 +1,68 @@
-<header [class.header_change]="header_variable" >
-    <div class="container">
-        <input type="checkbox" name="" id="check">
+<header [class.header_change]="header_variable">
+  <div class="container">
+    <input type="checkbox" name="" id="check" />
 
-        <div class="logo-container">
-            <h2 routerLink="/">OSR</h2>
-        </div>
-
-        <div class="nav-btn" >
-            <div class="nav-links">
-                <ul>
-                    <li class="nav-link nav-active" style="--i:  ">
-                        <a routerLink="/" >OSR</a>
-                    </li>
-                    <li (click)="closeNav()" class="nav-link" style="--i: .85s">
-                        <a routerLink="/" >HOME</a >
-                    </li>
-                    <li (click)="closeNav()" class="nav-link" style="--i: 1.1s">
-                        <a routerLink="/team"  href="#">TEAM</a >
-                    </li>
-                    <li class="nav-link" style="--i: 1.35s">
-                        <a >DIENSTEN<img class="diensten" src="assets/arrow-btn-small-right.svg" alt=""><i class="fas fa-caret-down"></i></a>
-                        <div class="dropdown">
-                            <ul>
-                                <li (click)="closeNav()" class="dropdown-link">
-                                    <a routerLink="/renovatie" >Renovatie & Transformatie</a>
-                                </li>
-                                <li (click)="closeNav()" class="dropdown-link">
-                                    <a routerLink="/verkoop" >Aan & Verkoop</a>
-                                </li>
-                                <li (click)="closeNav()" class="dropdown-link">
-                                    <a routerLink="/advies" href="#">Advies<i class="fas fa-caret-down"></i></a>
-                            </ul>
-                        </div>
-                    </li>
-                  <li (click)="toAbout()" (click)="closeNav()" class="nav-link" style="--i: 1.6s">
-                        <a routerLink="/" >OVER<i class="fas fa-caret-down"></i></a>
-                    </li>
-                    <li (click)="closeNav()"  class="nav-link" style="--i: 1.85s"><a (click)="onAddPopup()" class="btn-large">UW VASTGOED VERKOPEN?<i class="fas fa-caret-down"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="hamburger-menu-container">
-            <div class="hamburger-menu">
-                <div></div>
-            </div>
-        </div>
+    <div class="logo-container">
+      <h2 routerLink="/">OSR</h2>
     </div>
-    <app-pop-up></app-pop-up>
-</header>
 
+    <div class="nav-btn">
+      <div class="nav-links">
+        <ul>
+          <li class="nav-link nav-active" style="--i: ">
+            <a routerLink="/">OSR</a>
+          </li>
+          <li (click)="closeNav()" class="nav-link" style="--i: 0.85s">
+            <a routerLink="/">HOME</a>
+          </li>
+          <li (click)="closeNav()" class="nav-link" style="--i: 1.1s">
+            <a routerLink="/team" href="#">TEAM</a>
+          </li>
+          <li class="nav-link" style="--i: 1.35s">
+            <a
+              >DIENSTEN<img
+                class="diensten"
+                src="assets/arrow-btn-small-right.svg"
+                alt="" /><i class="fas fa-caret-down"></i
+            ></a>
+            <div class="dropdown">
+              <ul>
+                <li (click)="closeNav()" class="dropdown-link">
+                  <a routerLink="/renovatie">Renovatie & Transformatie</a>
+                </li>
+                <li (click)="closeNav()" class="dropdown-link">
+                  <a routerLink="/verkoop">Aan & Verkoop</a>
+                </li>
+                <li (click)="closeNav()" class="dropdown-link">
+                  <a routerLink="/advies" href="#"
+                    >Advies<i class="fas fa-caret-down"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            (click)="toAbout()"
+            (click)="closeNav()"
+            class="nav-link"
+            style="--i: 1.6s"
+          >
+            <a routerLink="/">OVER<i class="fas fa-caret-down"></i></a>
+          </li>
+          <li (click)="closeNav()" class="nav-link" style="--i: 1.85s">
+            <a (click)="onAddPopup()" class="btn-large"
+              >UW VASTGOED VERKOPEN?<i class="fas fa-caret-down"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hamburger-menu-container">
+      <div class="hamburger-menu">
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <app-pop-up></app-pop-up>
+</header>

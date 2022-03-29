@@ -1,95 +1,91 @@
 .house-whole {
-    display: grid;
-
+  display: grid;
 }
 
 .house-detail-container {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 50px;
-    max-width: 350px;
-    cursor: pointer;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+  max-width: 350px;
+  cursor: pointer;
 }
 
 .house-detail-first img {
-    width: 100%;
-    border-radius: 6px 6px 0px 0px;
-    object-fit: cover;
+  width: 100%;
+  border-radius: 6px 6px 0px 0px;
+  object-fit: cover;
 }
 
 .house-detail-second {
-    background-color: #F8F8F8;
-    padding: 20px;
-    border-radius: 00px 0px 6px 6px;
-    margin-top: -10px;
-
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 00px 0px 6px 6px;
+  margin-top: -10px;
 }
 
 .house-detail-second:hover img {
-    transform: translate3d(2px, 0px, 0px);
-    transition: transform .2s ease-in-out;
+  transform: translate3d(2px, 0px, 0px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.house-detail-second p {
+  margin-bottom: 6px;
 }
 
 .house-detail-second p span {
-    font-style: italic;
+  font-style: italic;
 }
 
 .house-detail-second h5 span {
-    font-weight:400;
+  font-weight: 400;
 }
 
-.house-detail-second h5{
-    margin-top: -5px;
-    margin-bottom: 5px;
-    line-height: 25px;
+.house-detail-second h5 {
+  margin-top: -5px;
+  margin-bottom: 5px;
+  line-height: 25px;
 }
 
 .house-detail-buttons {
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    margin-top: 30px;
-    align-items: center;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
 }
 
 .house-detail-more {
-    display: flex;
-    align-content: center;
-    align-items: center;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
-.house-detail-more img { 
-    transition: transform .2s ease-in-out;
-    cursor: pointer;
+.house-detail-more img {
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-.counter-block-third img:hover { 
-    transform: translate3d(2px, 0px, 0px);
+.counter-block-third img:hover {
+  transform: translate3d(2px, 0px, 0px);
 }
 
 p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-
-
 @media only screen and (min-width: 800px) {
-
-    .house-whole {
-        display: grid;
-        grid-template-columns: auto auto;
-        margin: auto;
-        width: 800px;
-    }
-
+  .house-whole {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    width: 800px;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
-
-    .house-whole {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        width: 1200px;
-    }
-
+  .house-whole {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1200px;
+  }
 }

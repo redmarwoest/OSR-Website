@@ -1,125 +1,116 @@
 p {
-    color: #ffffff;
-    font-size: 10;
+  color: #ffffff;
+  font-size: 10;
 }
 
 h2 {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 a {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-.a-dun{
-    font-weight:normal ;
+.a-dun {
+  font-weight: normal;
 }
 
 footer {
-    background-color:#313131;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    clear: both;
-    position: relative;
-    margin-top: 100px;
+  background-color: #313131;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  clear: both;
+  position: relative;
+  margin-top: 100px;
 }
 
 .footer-total {
-    padding:20px;
+  padding: 20px;
 }
 
 .footer-total-two {
-    display: flex;
-    flex-direction: column;
-    width: 150px;
-    margin-left:auto;
-    margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 hr {
-    display: none;
-
+  display: none;
 }
 
-
 .footer-total-three {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    margin-left:auto;
-    margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .logo {
-    margin-top: 20px
-    }
-
-.logo p {
-    margin-top: -12px
+  margin-top: 20px;
 }
 
+.logo p {
+  margin-top: -12px;
+}
 
 @media only screen and (min-width: 750px) {
+  .footer-total {
+    display: flex;
+    text-align: left;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+  }
 
+  .footer-total-one {
+    margin-right: 100px;
+  }
 
-    .footer-total {
-        display: flex;
-        text-align: left;
-        width: 700px;
-        margin-left:auto;
-        margin-right: auto;
-        padding: 50px;
-    }
+  hr {
+    display: inline;
+    margin: 0;
+    height: 155px;
+  }
 
-    .footer-total-one {
-        margin-right: 100px
-    }
+  .logo {
+    margin-top: 0px;
+  }
 
-    hr {
-        display: inline;
-        margin: 0;
-        height: 155px;
-    }
+  .logo h2 {
+    margin-top: 0px;
+  }
 
-    .logo {
-        margin-top: 0px
-        }
-    
-    .logo h2 {
-        margin-top: 0px
-        }
-    
-    a { 
-        margin: 8px;
-    }
+  a {
+    margin: 8px;
+  }
 
-    .footer-total-two {
-        margin-right: 10px;
+  .footer-total-two {
+    margin-right: 10px;
+  }
 
-    }
-
-    .footer-total-three {
-        margin-right: 0px;
-        margin-left: 40px;
-
-    }
-    footer {
-        margin-top: 150px;
-    }
-
+  .footer-total-three {
+    margin-right: 0px;
+    margin-left: 40px;
+  }
+  footer {
+    margin-top: 150px;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
-    .footer-total {
-        width: 60%;
-        max-width: 900px;
-    }
-
+  .footer-total {
+    width: 60%;
+    max-width: 900px;
+  }
 }

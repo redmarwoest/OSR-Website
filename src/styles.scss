@@ -1,10 +1,10 @@
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 // H1 Poppins 60 bold #081539
@@ -19,127 +19,127 @@ body {
 // Button small Poppins 12 bold -20AV height 29
 
 h1 {
-    font-size: 30px; 
-    color: #ffffff;
-    letter-spacing: -1px;
-    font-weight: bold;
-    margin: 2px;
+  font-size: 30px;
+  color: #ffffff;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin: 2px;
 }
 
 h2 {
-    font-size: 40px; 
-    color: #ffffff;
-    font-weight: bold;
-    margin: 2px;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 2px;
 }
 
 h3 {
-    font-size: 30px; 
-    color: #000000;
-    font-weight: bold;
-    margin: 2px;
+  font-size: 30px;
+  color: #000000;
+  font-weight: bold;
+  margin: 2px;
 }
 
 h4 {
-    font-size: 16px; 
-    color: #ffffff;
-    font-weight: bold;
-    margin: 2px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 2px;
 }
 
 h5 {
-    font-size: 20px; 
-    color: #000000;
-    font-weight: bold;
-    margin: 2px;
-    
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+  margin: 2px;
 }
 
 h6 {
-    font-size: 14px; 
-    color: #000000;
-    margin: 2px;
-    font-weight: normal;
-
+  font-size: 14px;
+  color: #000000;
+  margin: 2px;
+  font-weight: normal;
 }
 
 p {
-    font-size: 13px; 
-    color: #000000;
-    margin: 2px;
+  font-size: 13px;
+  color: #000000;
+  margin: 2px;
 }
 
 a {
-    font-size: 14px; 
-    color: #ffffff;
-    letter-spacing: -0.2px;
-    font-weight: bold;
-    margin: 2px;
-    text-decoration: none;
-    line-height: 20px;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+  font-weight: bold;
+  margin: 2px;
+  text-decoration: none;
+  line-height: 20px;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .btn-large {
-    height: 37px;
-    padding-left: 35px;
-    padding-right: 35px;
-    border: none;
-    border-radius: 4px;
-    letter-spacing: -0.2px;
-    font-weight: bold;
-    color: #272727 !important;
-    background-color: #F0E2D7;
-    font-size: 11px;
-    transition: transform .2s ease-in-out;
-    cursor: pointer;
-     -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08); 
-    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08);
+  height: 37px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: -0.2px;
+  font-weight: bold;
+  color: #272727 !important;
+  background-color: #f0e2d7;
+  font-size: 11px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
 }
 
 .btn-large-other {
-    height: 37px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    border-radius: 4px;
-    letter-spacing: -0.2px;
-    font-weight: bold;
-    color: #272727;
-    background-color: #F0E2D7;
-    transition: transform .2s ease-in-out;
-    cursor: pointer;
-    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08); 
-    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08);
+  height: 37px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: -0.2px;
+  font-weight: bold;
+  color: #272727;
+  background-color: #f0e2d7;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
 }
 
 .btn-small {
-    height: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    border-radius: 4px;
-    letter-spacing: -0.2px;
-    font-weight: bold;
-    color: #272727;
-    background-color: #F0E2D7;
-    transition: transform .2s ease-in-out;
-    cursor: pointer;
-    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08); 
-    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08);
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: -0.2px;
+  font-weight: bold;
+  color: #272727;
+  background-color: #f0e2d7;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
 }
 
 .btn-large-other:hover {
-    transform: translate3d(0px, -2px, 0px);
+  transform: translate3d(0px, -2px, 0px);
 }
 
 @media only screen and (min-width: 820px) {
-
-h1 {
-    font-size: 50px; 
-}
-
+  h1 {
+    font-size: 50px;
+  }
 }
